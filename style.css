@@ -46,6 +46,28 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
+.image-container {
+    max-width: 185px; /* Restrict the image container's size */
+    margin: 0; /* Center the container */
+    overflow: hidden; /* Prevent any overflow */
+  }
+  
+  .styled-image {
+    width: 100%; /* Ensure image fills the container */
+    height: 100%;
+    object-fit: cover; /* Crop the image to fill the container */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease; /* Smooth zoom on hover */
+    
+  }
+  
+  .styled-image:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+
+
 /* Link styling */
 a:link {
     color: darkblue;
