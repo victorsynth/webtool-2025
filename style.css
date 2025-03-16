@@ -53,14 +53,13 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .styled-image {
-    width: 100%; /* Ensure image fills the container */
-    height: 100%;
-    object-fit: cover; /* Crop the image to fill the container */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    transition: transform 0.3s ease; /* Smooth zoom on hover */
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
     
-  }
+  
   
   .styled-image:hover {
     transform: scale(1.05); /* Slight zoom effect */
@@ -97,6 +96,7 @@ footer {
     width: 100%;
     position: relative;
     bottom: 0;
+    border-radius: 13px;
 }
 
 /* Nav styling */
