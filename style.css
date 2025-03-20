@@ -1,13 +1,13 @@
-/* General body styling */
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #e3dbd4; /* Light background */
-    color: #050202; /* Default text color */
+    background-color: #e3dbd4; 
+    color: #050202; 
     margin: 0;
     padding: 20px;
 }
 
-/* Header styling */
+
 header {
     padding: 30px;
     background-color: rgba(192, 188, 188, 0.8);
@@ -20,7 +20,7 @@ header {
     color: #2f4f4f;
 }
 
-/* Paragraph styling */
+
 p {
     font-family: Arial, Helvetica, sans-serif;
     color: #333;
@@ -28,16 +28,15 @@ p {
     font-weight: normal;
 }
 
-/* Section styling */
 section {
     padding: 20px;
     margin: 20px 0;
-    background-color: #bc733c43; /* Lighter section background */
+    background-color: #bc733c43; 
     border-radius: 13px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Headings styling */
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Times New Roman', Times, serif;
     color: #070606;
@@ -45,11 +44,16 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
 }
+figcaption{
+    color: #070606;
+   
+    
+   
 
+}   
 .image-container {
-    max-width: 185px; /* Restrict the image container's size */
-    margin: 0; /* Center the container */
-    overflow: hidden; /* Prevent any overflow */
+    margin: 0; 
+    overflow: hidden; 
   }
   
   .styled-image {
@@ -62,12 +66,12 @@ h1, h2, h3, h4, h5, h6 {
   
   
   .styled-image:hover {
-    transform: scale(1.05); /* Slight zoom effect */
+    transform: scale(1.05); 
   }
   
 
 
-/* Link styling */
+
 a:link {
     color: darkblue;
     text-decoration: none;
@@ -79,14 +83,14 @@ a:visited {
 
 a:hover {
     color: #e40a56;
-    text-decoration: underline; /* Add underline on hover */
+    text-decoration: underline; 
 }
 
 a:active {
     color: #0b0b0b;
 }
 
-/* Footer styling */
+
 footer {
     background-color: rgba(54, 50, 50, 0.8);
     color: white;
@@ -99,13 +103,13 @@ footer {
     border-radius: 13px;
 }
 
-/* Nav styling */
+
 nav {
-    background-color: #f0f0f0; /* Light gray background for the navigation */
+    background-color: #f0f0f0; 
     padding: 10px;
 }
 
-/* Optional hover effect for navigation */
+
 nav a:hover {
     color: #ff6600;
     text-decoration: underline;
