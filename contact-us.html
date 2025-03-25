@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <title>My First Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <header>
+        <h1>Welcome to My Page</h1>
+    </header>
+    <nav>
+        <a href="index.html" aria-label="Home Page">Home</a>
+        <a href="Contact us" aria-label="Contact Us ">Contact Us</a>
+        <a href="about-us.html" aria-label="About Us Page">About Us</a>
+    </nav>
+    <p></p>
+     <main>
+        <section>
+            <h2>Get in Touch</h2>
+            <br>
+            <form name="contactForm" method="post" action="success.html">
+                <fieldset>
+                    <br>
+                    <legend>Contact Information</legend>
+                    <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    </p>
+                    <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    </p>
+                    <p>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    </p>
+                    <p>Preferred Contact Method:</p>
+                    <label><input type="radio" name="contact-method" value="email" required> Email</label>
+                    <label><input type="radio" name="contact-method" value="phone"> Phone</label>
+                    
+                    <p>Topics of Interest:</p>
+                    <label><input type="checkbox" name="topic" value="web"> Web Development</label>
+                    <label><input type="checkbox" name="topic" value="design"> Design</label>
+                    <label><input type="checkbox" name="topic" value="seo"> SEO</label>
+                    
+                    <label for="inquiry">Type of Inquiry:</label>
+                    <select id="inquiry" name="inquiry">
+                        <option value="general">General</option>
+                        <option value="support">Support</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                    
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </fieldset>
+            </form>
+        </section>
+        
+        <section>
+            <h2>Upcoming Events</h2>
+            <table>
+                <caption>Company Events Schedule</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Date</th>
+                        <th scope="col">Event</th>
+                        <th scope="col">Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>April 10, 2025</td>
+                        <td>Web Development Workshop</td>
+                        <td>Dallas, TX</td>
+                    </tr>
+                    <tr>
+                        <td>May 15, 2025</td>
+                        <td>SEO Training</td>
+                        <td>Online</td>
+                    </tr>
+                    <tr>
+                        <td>June 5, 2025</td>
+                        <td>Graphic Design Webinar</td>
+                        <td>Online</td>
+                    </tr>
+                    <tr>
+                        <td>July 20, 2025</td>
+                        <td>Networking Event</td>
+                        <td>New York, NY</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>            <p>&copy; 2025 Kodjo Tchinou.</p>
+            <p><a href="https://www.dallascollege.edu/pages/default.aspx" target="_blank" rel="noopener noreferrer">Visit
+                    Dallas College</a></p>
+            <p><a href="mailto:tchinouvictor0@example.com">Email Me</a></p>
+    
+    
+            <address>
+                Richland Address: <br>
+                12800 Abrams Rd, Dallas, TX 75243
+            </address>
+    
+    
+            <h3><a href="tel:19728604329">Tel: +1 972-860-4329</a></h3>
+</body>
+</html>
