@@ -69,6 +69,21 @@ figcaption{
     transform: scale(1.05); 
   }
   
+  table {
+    border-collapse: collapse;
+    width: 60%;
+    margin: auto;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 
 
 
