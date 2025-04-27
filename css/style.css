@@ -1,7 +1,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #d5d1ce; 
+    background-color: #e3dbd4; 
     color: #050202; 
     margin: 0;
     padding: 20px;
@@ -10,14 +10,75 @@ body {
     box-sizing: border-box;
   }
   
-  nav {
-    background-color: #706969;
-    padding: 10px;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+  
+   
+
+
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        "header header header"
+        "nav main aside"
+        "footer footer footer";
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    header {
+      grid-area: header;
+    }
+
+    nav {
+      grid-area: nav;
+    }
+
+    main {
+      grid-area: main;
+    }
+
+    aside {
+      grid-area: aside;
+    }
+
+    footer {
+      grid-area: footer;
+    }
+  
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr; /* nav | main | aside */
+      gap: 20px;
+    }
+    nav {
+  border-right: 2px solid #444;
+  padding-right: 10px;
 }
+
+main {
+  padding: 0 10px;
+}
+
+aside {
+  border-left: 2px solid #444;
+  padding-left: 10px;
+}
+nav {
+  border-right: px solid #444;
+  padding-right: 10px;
+}
+
+main {
+  padding: 0 10px;
+}
+
+aside {
+  border-left: 2px solid #444;
+  padding-left: 10px;
+}
+
+    
+    
 
 
 header {
