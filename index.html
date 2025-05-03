@@ -26,6 +26,7 @@
             <button id="theme-toggle-icon">Toggle Theme</button>
         </div>
         
+        
         <img src="images/logo/lgo.png" alt="Site Logo" class="logo">
     <img src="images/logo/lgo.png" alt="Site Logo" class="logo">
     <nav class="nav-bar">
@@ -139,28 +140,23 @@
     </div>
     <script>
         const toggleButton = document.getElementById('theme-toggle-icon');
-
-    const body = document.body;
-    
-    const savedTheme = localStorage.getItem('theme');
-    
-    
-    if (savedTheme) {
-        body.classList.add(savedTheme);
-    }
-  
-    toggleButton.addEventListener('click', () => {
+        const body = document.body;
+        const savedTheme = localStorage.getItem('theme');
         
-        body.classList.toggle('dark-mode');
-        
-        
-        if (body.classList.contains('dark-mode')) {
-            localStorage.setItem('theme', 'dark-mode');
-        } else {
-            localStorage.setItem('theme', 'light');
+        if (savedTheme) {
+            body.classList.add(savedTheme);
         }
-    });
-</script>    
+    
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('theme', 'dark-mode');
+            } else {
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    </script>
+    
 </body>
 
 </html>
