@@ -11,6 +11,7 @@
     <title>My First Site</title>
     <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -18,19 +19,14 @@
     <header>
             <h1>My First Site</h1>
     <img src="images/logo/lgo.png" alt="Site Logo" class="logo">
-            <nav class="nav-bar">
-              <a href="index.html">Home</a>
-              <a href="contact-us.html">Contact-us </a>
-              <a href="team.html">Team</a>
-              <a href="#" class="sign-in">Sign In</a>
-            </nav>
-        </header>
-    <nav>
-        <a href="index.html" aria-label="Home Page">Home</a>
-        <a href="contact-us.html" aria-label="Contact Us Page ">Contact Us</a>
-        <a href="about-us.html" aria-label="About Us Page">About Us</a>
-        <a href="team.html" aria-label="Team Page">Team</a>
+    <nav class="nav-bar">
+        <a href="index.html"><i class="fa fa-home"></i> Home</a>
+      <a href="contact-us.html"><i class=" fa fa-phone"></i> Contact-us</a>
+      <a href="team.html"><i class=" fa fa-user"></i>Team</a>
+      <a href="#" class="sign-in">Sign In</a>
     </nav>
+        </header>
+  
     <p></p>
      <main>
         <section>
@@ -41,19 +37,26 @@
                     <br>
                     <legend>Contact Information</legend>
                     <p>
-                    <label for="name">Name:</label>
-                    <input class="w3-input w3-border w3-round w3-tiny" type="text">
+                   <label for="first-name">First Name:</label>
+                   <input type="text" id="first-name" name="first-name">
                     </p>
                     <p>
-                    <label for="email">Email:</label>
-                    <input class="w3-input w3-border w3-round w3-tiny" type="text">
+                    <label for="Email">Email:</label>
+                    <input type="text" id="Email" name="Email">
+
                     </p>
                     <p>
                     <label for="message">Message:</label>
-                    <input class="w3-input w3-border w3-round" type="text">
-                    <p>Preferred Contact Method:</p>
-                    <label><input type="radio" name="contact-method" value="email" required> Email</label>
-                    <label><input type="radio" name="contact-method" value="phone"> Phone</label>
+                    <input type="text" id="message" name="message" required>
+                    </p>
+                    <p>
+                        Preferred Contact Method:
+                    </p>
+                   <input type="radio" id="phone" name="contact-method" value="phone">
+                   <label for="phone">Phone</label>
+                   <input type="radio" id="email" name="contact-method" value="email">
+                   <label for="email">Email</label>
+
                     
                     <p>Topics of Interest:</p>
                     <label><input type="checkbox" name="topic" value="web"> Web Development</label>
