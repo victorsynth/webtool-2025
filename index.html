@@ -11,18 +11,26 @@
     <title>My First Site</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 <body>
 
     <div class="grid-container">
     <header>
         <h1>Welcome to My Page</h1>
-        <img src="images/logo/lgo.png" alt="Site Logo" class="logo">
+        <div id="theme-toggle-container">
+            <button id="theme-toggle-icon">Toggle Theme</button>
+        </div>
+        
+        
     <img src="images/logo/lgo.png" alt="Site Logo" class="logo">
     <nav class="nav-bar">
-      <a href="index.html">Home</a>
-      <a href="contact-us.html">Contact-us </a>
-      <a href="team.html">Team</a>
+        <a href="index.html"><i class="fa fa-home"></i> Home</a>
+      <a href="contact-us.html"><i class=" fa fa-phone"></i> Contact-us</a>
+      <a href="team.html"><i class=" fa fa-user"></i>Team</a>
       <a href="#" class="sign-in">Sign In</a>
     </nav>
   </header>
@@ -30,7 +38,8 @@
 
 <nav>
     <ul>
-
+        <ul class="w3-ul">
+           
         <li><a href="#about-me">About Me</a></li>
         <li><a href="#hobbies">Hobbies</a></li>
         <li><a href="#goals">My Goals</a></li>
@@ -72,7 +81,7 @@
             </figure>
 
         </section>
- 
+
 
 
 
@@ -128,7 +137,25 @@
     </footer>
 
     </div>
-
+    <script>
+       toggleButton = document.getElementById('theme-toggle-icon');
+         body = document.body;
+        savedTheme = localStorage.getItem('theme');
+        
+        if (savedTheme) {
+            body.classList.add(savedTheme);
+        }
+    
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('theme', 'dark-mode');
+            } else {
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    </script>
+    
 </body>
 
-</html>
+</html> 
