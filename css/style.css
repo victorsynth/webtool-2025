@@ -228,7 +228,7 @@ a:active {
     color: #facc15;
   }
   
-  /* Flexbox Team Section */
+  
   .team-section {
     display: flex;
     justify-content: space-around;
@@ -317,3 +317,4 @@ body.dark-mode a {
   color: #66b3ff; 
 
 }
+
